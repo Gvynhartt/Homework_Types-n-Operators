@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        double InitialBalance = 300; // изначальная сумма на счету
-        double TopUpAmount = 928; // сумма пополнения счёта
-        boolean IsBonusApplicable = false; // логическая переменная, показывающая, доступен ли бонус
+        double initialBalance = 300; // изначальная сумма на счету
+        double topUpAmount = 928; // сумма пополнения счёта
+        boolean isBonusApplicable = false; // логическая переменная, показывающая, доступен ли бонус
 
-        if (TopUpAmount > 1000) {
-            IsBonusApplicable = true;
+        if (topUpAmount > 1000) {
+            isBonusApplicable = true;
         } else {
-            IsBonusApplicable = false;
+            isBonusApplicable = false;
         }
 
-        int OperatorBonus = IsBonusApplicable ? (int) (TopUpAmount / 100) : 0; // подсчитывается итоговый бонус от оператора
-        System.out.println("Итоговый баланс на счету: " + (InitialBalance + TopUpAmount + OperatorBonus) + " рублей; бонус от оператора: " + OperatorBonus + " рублей.");
+        int operatorBonus = isBonusApplicable ? (int) (topUpAmount / 100) : 0; // подсчитывается итоговый бонус от оператора
+        System.out.println("Итоговый баланс на счету: " + (initialBalance + topUpAmount + operatorBonus) + " рублей; бонус от оператора: " + operatorBonus + " рублей.");
     }
 }
